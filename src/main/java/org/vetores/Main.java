@@ -4,15 +4,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int x = 20;
-        Object xa = x;
+        int[] x = new int[3];
+        x[0] = 1;
+        x[1] = 2;
+        x[2] = 3;
 
-        System.out.println(x);
-        System.out.println(xa);
+        String[] names = new String[]{"Maria", "Bod", "Alex"};
 
-        Integer ya = 30;
-        int y = ya;
-        System.out.println(y);
-        System.out.println(ya);
+        for (int num : x) {
+            System.out.println(num);
+        }
+
+        System.out.println();
+        for (String name : names) {
+            System.out.println(name);
+        }
     }
 }
