@@ -10,8 +10,8 @@ public class Main {
         System.out.println(x);
         System.out.println(xa);
 
-        Object ya = 30;
-        int y = (int) ya;
+        Integer ya = 30;
+        int y = ya;
         System.out.println(y);
         System.out.println(ya);
     }
