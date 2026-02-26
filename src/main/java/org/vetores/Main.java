@@ -22,5 +22,16 @@ public class Main {
         for (String name : names) {
             System.out.println(name);
         }
+
+        System.out.println();
+        System.out.println("Index of Bob: " + names.indexOf("Bob"));
+
+        System.out.println();
+
+        List<String> namesWithA = names.stream().filter(name -> name.charAt(0) == 'A').toList();
+
+        for (String name : namesWithA) {
+            System.out.println(name);
+        }
     }
 }
